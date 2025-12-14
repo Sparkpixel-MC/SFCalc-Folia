@@ -6,6 +6,7 @@ depend: [Slimefun]
 softdepend:
   - GuizhanLibPlugin
 api-version: 1.16
+folia-supported: true
 commands:
   sfcalc:
     description: Base SFCalc command

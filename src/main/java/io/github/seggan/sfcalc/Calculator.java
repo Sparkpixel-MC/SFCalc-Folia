@@ -38,7 +38,7 @@ public class Calculator {
      * to be {@code true}
      */
     public void printResults(@Nonnull CommandSender sender, @Nonnull SlimefunItem item, long amount, boolean needed) {
-        Bukkit.getScheduler().runTaskAsynchronously(plugin, () -> {
+        Bukkit.getAsyncScheduler().runNow(plugin, scheduledTask -> {
             Map<ItemStack, Long> results = calculate(item, amount);
 
             StringRegistry registry = plugin.getStringRegistry();
